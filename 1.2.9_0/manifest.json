@@ -1,0 +1,41 @@
+{
+   "action": {
+      "default_icon": "img/logo-60.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [ "assets/index.js.366ce34b.css" ],
+      "js": [ "assets/content-script-loader.chunk-6ddb0d71.41762930.js", "assets/content-script-loader.chunk-f222ba2e.31df338c.js" ],
+      "matches": [ "*://search.google.com/*", "*://www.bing.com/*" ]
+   } ],
+   "description": "GSCTool.com - Google Search Console & Bing Webmaster Tools: Removal (Block) Bulk (Multiple) URLs, Indexing, ...",
+   "icons": {
+      "120": "img/logo-120.png",
+      "16": "img/logo-16.png",
+      "32": "img/logo-32.png",
+      "60": "img/logo-60.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnJuSWQcQvs53yQE0pKh4QFEkJBlCAgNkTuLy4DjS0t4+aPdMDSmpEEuWPMTgdH3n1dfX9B8m+5MYC4t/qz17k47O2xdJu6eN7XgAdenoghUWn6gY8HKtZ8djtyXR1rY0XjS3lDyJ65IC3rmztKLo+MNOBQCzKJo+uepMFbDrl3WOQTOX5rnLtLLAOlUQlH1YLWX/29Wt5ralxOP0LPbrofA2uL5Yd8YuokHk8W66IYVmhGwx9qWm0Sfld4Ew1rKJCJ10PzfMr/jPD6LhmidQHK4KFH+jFoP58y9yA+gcMH2O4g+UmfInzCrfgpR0iFRZ9epBydruLu97Y+VahpdziwIDAQAB",
+   "manifest_version": 3,
+   "name": "Google Search Console & Bing Webmaster Tools",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.9",
+   "web_accessible_resources": [ {
+      "matches": [ "*://search.google.com/*", "*://www.bing.com/*" ],
+      "resources": [ "*" ],
+      "use_dynamic_url": false
+   }, {
+      "matches": [ "*://search.google.com/*", "*://www.bing.com/*" ],
+      "resources": [ "assets/chunk-9bf1c375.js", "assets/chunk-6ddb0d71.js", "assets/chunk-edf4b135.js", "assets/chunk-b280d37b.js", "assets/chunk-47d31085.js", "assets/chunk-225708e2.js", "assets/chunk-f222ba2e.js" ],
+      "use_dynamic_url": true
+   } ]
+}
